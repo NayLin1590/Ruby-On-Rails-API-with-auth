@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     get "api/applicants/detail",  to:"applicants#detail"
     delete "api/applicants/delete", to: "applicants#destroy"
 
-    post "api/applicants/confirm", to: "applicants#confirm"
+    post "api/applicants/validate", to: "applicants#validate"
     post "api/applicants/create", to: "applicants#create"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resource :users, only: [:create]
